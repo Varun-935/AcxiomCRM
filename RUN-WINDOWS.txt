@@ -1,0 +1,4 @@
+Open PowerShell in this folder and run:
+ dotnet restore
+ dotnet run
+Then open the localhost URL printed by dotnet.

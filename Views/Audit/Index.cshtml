@@ -1,0 +1,2 @@
+@model IEnumerable<AuditLog>
+<h1>Audit log</h1><p class="text-muted">Recent changes recorded by the application.</p><div class="card"><div class="table-responsive"><table class="table table-hover mb-0"><thead><tr><th>Time (UTC)</th><th>User</th><th>Action</th><th>Module</th><th>Record</th><th>Details</th></tr></thead><tbody>@foreach(var x in Model){<tr><td>@x.CreatedDate.ToString("yyyy-MM-dd HH:mm")</td><td>@x.UserName</td><td>@x.Action</td><td>@x.EntityName</td><td>@x.RecordId</td><td>@x.Details</td></tr>}</tbody></table></div></div>
